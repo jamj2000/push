@@ -38,11 +38,11 @@ const app = (() => {
           actions: [
             {
               action: 'explore', title: 'Ir al sitio web',
-              icon: 'images/checkmark.png'
+              icon: 'images/ok.png'
             },
             {
               action: 'close', title: 'Cerrar',
-              icon: 'images/xmark.png'
+              icon: 'images/ko.png'
             },
           ] //,
           // Añadimos tag a la notificación

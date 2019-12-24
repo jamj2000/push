@@ -6,7 +6,7 @@
 const webPush = require('web-push');
 
 ///// Cada vez que un usuario quite la subscripción y luego vuelva a SUSCRIBIRSE, debera ser actualizada esta constante.
-const pushSubscription = {"endpoint":"https://fcm.googleapis.com/fcm/send/eJ4PTkZNvCk:APA91bEqRN564ZfzNL83hzyaDuJOXm0bPQudb5D_o5NQH06fQjyaaaUW8qGToXGOCplWX852eTaBGBJypHNzY1wwG7THNuQe63A_UNnAvqVo2ILmsIol3lCM4M_jC-3ve8o_L3G1xTVd","expirationTime":null,"keys":{"p256dh":"BGnc5oRfd9pcczwtfAkDFgPy5tKuiENhAlWt0VDsRXSbm8xCEsKPEuZX4bGK3E4DUUMDe7vUu7JodWbnbSKvRRA","auth":"OFVKFIu2ZPhOC3c5oqG8wQ"}};
+const pushSubscription = {"endpoint":"https://fcm.googleapis.com/fcm/send/fQ1HJGhytoU:APA91bHZcpXAsOb8J5dTZ8tUCjSayVMgnW04ZtnzlBoQLcZx7OQbvTW2zapqUY9jOHDRV2ITCI2Trz0IvZg2B7NbjPFy2R75uFQeE7I8ZzfDPgr2opc9ph9nTgC1jkuKoyJ-e46GB-JG","expirationTime":null,"keys":{"p256dh":"BJgS8NIf793osghnWRcvmluznassNYj7Ny8-bGkPQSY4ohzwa-BjD3G7lWpZkGbjpZgkwyriQckNCJOWrR2GkZM","auth":"YkxByakK5yGftQBkU3ZWoA"}};
 
 // Para generar VAPID keys ejecutar en un terminal de texto:
 //    npx  web-push  generate-vapid-keys

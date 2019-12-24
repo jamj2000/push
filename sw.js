@@ -56,7 +56,7 @@ self.addEventListener('push', event => {
 
     const options = {
         body: body,
-        icon: 'images/notification-flat.png',
+        icon: 'images/ok.png',
         vibrate: [100, 50, 100],
         data: {
             dateOfArrival: Date.now(),
@@ -65,11 +65,11 @@ self.addEventListener('push', event => {
         actions: [
             {
                 action: 'explore', title: 'Ir a sitio web',
-                icon: 'images/checkmark.png'
+                icon: 'images/ok.png'
             },
             {
                 action: 'close', title: 'Cerrar la notificación',
-                icon: 'images/xmark.png'
+                icon: 'images/ko.png'
             },
         ]
     };
@@ -83,7 +83,7 @@ self.addEventListener('push', event => {
             } else {
                 // Send a message to the page to update the UI
                 console.log('¡La applicación está ya abierta!   No haremos nada.');
-                self.registration.showNotification();
+                self.registration.showNotification('Notificación');
                 
             }
         })
