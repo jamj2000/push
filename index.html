@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <!-- Include manifest -->
+  <!-- link rel="manifest" href="manifest.json" -->
+  <title>Notificaciones Push</title>
+</head>
+
+<body>
+  <h1>CodeLab de Notificaciones Push</h1>
+  <h2>BACKEND: node/main.js</h2>
+  <h2>FRONTEND: index.html + main.js + sw.js</h2>
+  <h2>OTROS: server.js (unicamente para pruebas del frontend)</h2>
+  <p>Documentación en:</p>
+  <ul>
+    <li><a
+        href="http://https://developers.google.com/web/fundamentals/push-notifications/sending-messages-with-web-push-libraries"
+        target="_blank" rel="noopener noreferrer">
+        Developers Google</a></li>
+    <li><a href="https://serviceworke.rs/push-subscription-management.html">Demo subscription management</a></li>
+    <li><a href="https://github.com/mozilla/serviceworker-cookbook/tree/master/push-subscription-management">
+        GitHub subscription management</a></li>
+    <li><a href="https://codelabs.developers.google.com/codelabs/pwa-integrating-push/index.html">Training tutorial</a></li>
+  </ul>
+
+
+  <p>Esta página debe accederse mediante HTTPS o localhost.</p>
+  <button class="js-notify-btn">¡Notificame!</button>
+  <button disabled class="js-push-btn">Habilitar mensajes Push</button><br><br>
+  <section class="js-sub-endpoint" style="display:none;width:80%">
+    <h3>Objecto de suscripción:</h3>
+    <code class="js-subscription-json"></code><br><br><br>
+    <h3>URL final:</h3>
+    <code class="js-endpoint-url"></code>
+  </section>
+
+  <!-- Include script -->
+  <script src="main.js"></script>
+
+</body>
+
+</html>
